@@ -1,0 +1,21 @@
+.contactContainer {
+    padding: 50px;
+    background-color: #f8f9fa;
+  }
+  
+  .addressSection {
+    padding-right: 50px;
+  }
+  
+  .formSection {
+    padding-left: 50px;
+  }
+  
+  .formSection h4 {
+    margin-bottom: 30px;
+  }
+  
+  .formSection button {
+    margin-top: 20px;
+  }
+  

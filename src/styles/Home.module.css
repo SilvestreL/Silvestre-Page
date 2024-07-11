@@ -1,0 +1,71 @@
+/* styles/Home.module.css */
+.skeletonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subHeading {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.profileImage {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-out;
+}
+
+.servicesHeading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.servicesList {
+  font-size: 1.25rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.textContainer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.subtitle {
+  color: #999;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.mainText {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+

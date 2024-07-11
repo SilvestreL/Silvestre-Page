@@ -1,0 +1,171 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brandContainer, .brandContainerModal {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.brandText {
+  color: #fafbfbbe;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brandTextHome {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.menuText {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.95);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.modalClose {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #f3fbfcbe;
+  font-weight: bold;
+}
+
+.modalBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  transition: background-image 0.5s ease-in-out;
+  position: relative;
+}
+
+.bgContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5); /* Overlay color */
+}
+
+.modalFooter {
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}
+
+.navLink {
+  color: #999 !important;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #fff !important;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLink:hover::before {
+  content: '—';
+  position: absolute;
+  left: -30px;
+  color: white;
+  font-size: 3rem;
+}
+
+.cvLink {
+  color: #000;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cvLink:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.cvLinkModal {
+  font-size: 2rem;
+  margin-top: 1rem;
+}

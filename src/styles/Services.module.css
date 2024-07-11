@@ -1,0 +1,50 @@
+.servicesContainer {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicesTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.cardTitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.cardTechnologies {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.cardTechnology {
+  font-size: 12px;
+  background-color: #f0f0f0;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
