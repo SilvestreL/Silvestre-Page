@@ -16,6 +16,7 @@
 
 .carousel img {
   max-height: 400px;
+  
 }
 
 .services {
@@ -42,4 +43,37 @@
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+.few {
+  color: #878A8F;
+  font-size: 15px;
+  padding: 5px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica Now Display DW', sans-serif;
+}
+
+.title {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: #0f141e;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0px 10px 10px ;
+
+}
+.description {
+  color: #878a8f;
+  text-decoration: none;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-size: 22px;
+  transition: all .2s cubic-bezier(.3,0,.5,1);
+  padding: 2px 0px 3px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.875rem;
+  
+  
 }

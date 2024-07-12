@@ -34,11 +34,7 @@ const MyNavbar = () => {
           </div>
         </div>
         <Nav className="ml-auto d-flex align-items-center">
-          <Nav.Link
-            href="/cv.pdf"
-            target="_blank"
-            className={styles.cvLink}
-          >
+          <Nav.Link href="/cv.pdf" target="_blank" className={styles.cvLink}>
             CV
           </Nav.Link>
           <Nav.Link onClick={handleShow} className={styles.menuButton}>
@@ -99,7 +95,7 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <img src="/images/project.jpg" alt="Projects" />
+                          <img src="/images/palestra.jpg" alt="Projects" />
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -127,15 +123,7 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18709.56780647672!2d-35.73592654619894!3d-9.663763920258464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1720619333659!5m2!1spt-BR!2sbr"
-                            width="600"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                          ></iframe>
+                          <video src="/video/maceio1.mov" autoPlay ></video>
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -149,7 +137,7 @@ const MyNavbar = () => {
                     target="_blank"
                     onMouseEnter={() =>
                       handleMouseEnter(
-                        <img src="/images/github.jpg" alt="Github" />
+                        <video src="/video/maceio2.mov" autoPlay ></video>
                       )
                     }
                     onMouseLeave={handleMouseLeave}

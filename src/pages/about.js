@@ -3,14 +3,13 @@ import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/About.module.css";
 
-
 const About = () => {
   return (
     <div className={styles.about}>
       <Container className="text-center">
         <Row className="justify-content-center mb-5">
-          <Col md={10}>
-            <h2 className={styles.heading}>A Few Words About Me</h2>
+          <Col md={12}>
+            <h2 className={styles.few}>A Few Words About Me</h2>
             <h1 className={styles.title}>
               I'm Lucas Silvestre, a Project Manager T.I and FullStack
               Developer. I am extremely curious and fascinated by learning new
@@ -24,27 +23,27 @@ const About = () => {
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-center mb-5">
-          <Col md={10}>
-            <Carousel fade id="carouselExampleFade" className={styles.carousel}>
+        <Row className="justify-content-left mb-5">
+          <Col md={7}>
+            <Carousel className={styles.carousel}>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=555&text=Primeiro+Slide"
+                  src="/images/palestra.jpg"
                   alt="Primeiro Slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/800x400?auto=yes&bg=666&fg=444&text=Segundo+Slide"
+                  src="images/lucas.jpg"
                   alt="Segundo Slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/800x400?auto=yes&bg=555&fg=333&text=Terceiro+Slide"
+                  src="/images/mcz.jpg"
                   alt="Terceiro Slide"
                 />
               </Carousel.Item>
@@ -106,7 +105,6 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-   
     </div>
   );
 };

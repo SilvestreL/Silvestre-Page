@@ -79,7 +79,7 @@ const Footer = () => {
         <Row className="mt-4">
           <Col className="text-center">
             <p className={styles.footerText}>
-              © 2021 — 2024 Lucas Silvestre. Made with{" "}
+              © 2024 - Lucas Silvestre. Made with{" "}
               <span className={styles.heart}></span> in Maceió, Brasil.
             </p>
           </Col>

@@ -13,7 +13,7 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simula um carregamento de 2 segundos
+    }, 2000); 
 
     const handleScroll = () => {
       const newOpacity = 1 - window.scrollY / 500;
@@ -62,7 +62,7 @@ const HomePage = () => {
             </Col>
             <Col md={6} className="text-right">
               <img
-                src="/lucas.jpg"
+                src="/images/lucas.jpg"
                 alt="Lucas Silvestre"
                 className={styles.profileImage}
                 style={{ opacity }}

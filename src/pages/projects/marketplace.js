@@ -101,7 +101,7 @@ const Marketplace = () => {
               <li>Website Design</li>
               <li>UX Design</li>
               <li>Photography</li>
-              <li>TDO</li>
+              
             </ul>
             <div className={styles.client}>
 
