@@ -1,0 +1,62 @@
+.container {
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subtitle {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    font-size: .875rem; /* Ajuste conforme necessário */
+    color: #878a8f; /* Cor cinza claro */
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    line-height: 1.25rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: .4em;
+  }
+  
+  .mainText {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    font-size: 3.875rem; /* Tamanho grande do texto principal */
+    color: #0a0a14; /* Cor preta */
+    font-weight: 800; /* Peso da fonte para negrito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.1rem;
+   
+  }
+  
+  .arrow {
+    margin-left: 0.5rem; /* Espaçamento antes da seta */
+    font-size: 1em; /* Mesmo tamanho do texto principal */
+  }
+  
+  .link {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    font-size: 1rem;
+    color: #0a0a14; /* Cor preta */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+.mainText:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}

@@ -36,6 +36,7 @@ const MyNavbar = () => {
         <Nav className="ml-auto d-flex align-items-center">
           <Nav.Link href="/cv.pdf" target="_blank" className={styles.cvLink}>
             CV
+            <i class="bi bi-download"></i>
           </Nav.Link>
           <Nav.Link onClick={handleShow} className={styles.menuButton}>
             <motion.div
@@ -123,7 +124,7 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <video src="/video/maceio1.mov" autoPlay ></video>
+                          <video src="/video/maceio1.mov" autoPlay></video>
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -137,7 +138,7 @@ const MyNavbar = () => {
                     target="_blank"
                     onMouseEnter={() =>
                       handleMouseEnter(
-                        <video src="/video/maceio2.mov" autoPlay ></video>
+                        <video src="/video/maceio2.mov" autoPlay></video>
                       )
                     }
                     onMouseLeave={handleMouseLeave}

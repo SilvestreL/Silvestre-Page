@@ -6,24 +6,58 @@
 }
 
 .mainHeading {
-  font-size: 2.5rem;
   font-weight: bold;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-weight: 400;
+  letter-spacing: .4em;
+  color: #878a8f;
 }
 
 .subHeading {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: #0f141e;
+  font-size: 3.875rem;
+  line-height: 4.0625rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 .paragraph {
   font-size: 1.25rem;
   line-height: 1.5;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #878a8f;
+  letter-spacing: normal;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-family: "Helvetica Now Display DW", sans-serif;
 }
 
 .link {
   font-weight: bold;
-  text-decoration: underline;
   margin-right: 10px;
+  font-size: 1.125rem;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  display: inline-block;
+  color: #000;
+}
+
+.link:hover {
+  text-decoration: underline;
+  
 }
 
 .profileImage {
@@ -33,14 +67,19 @@
 }
 
 .servicesHeading {
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 36px;
+  margin: 0 0 10px;
+  font-family: "Helvetica Now Display DW", sans-serif;
+
 }
 
 .servicesList {
-  font-size: 1.25rem;
-  list-style-type: none;
-  padding: 0;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "Helvetica Now Display DW", sans-serif;
+
 }
 
 .textContainer {
@@ -53,19 +92,13 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-family: "Helvetica Now Display DW", sans-serif;
 }
 
 .mainText {
   font-weight: bold;
   font-size: 36px;
   margin: 0 0 20px;
-}
-
-.link {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
+  font-family: "Helvetica Now Display DW", sans-serif;
 }
 

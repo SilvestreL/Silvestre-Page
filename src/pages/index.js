@@ -24,6 +24,8 @@ const HomePage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
   return (
     <div>
       {loading ? (
@@ -71,8 +73,8 @@ const HomePage = () => {
           </Row>
 
           <Row>
-            <p> Selected Projects</p>
-            <h1>Web developer </h1>
+            <p className={styles.mainHeading}> Selected Projects</p>
+            <h1 className={styles.subHeading}>Web developer </h1>
             <Col>
               <Carousel>
                 <Carousel.Item>
