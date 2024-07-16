@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/Navbar.module.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const MyNavbar = () => {
   const [show, setShow] = useState(false);
@@ -21,22 +22,22 @@ const MyNavbar = () => {
 
   return (
     <>
-      <Navbar bg="light" className={styles.navbar}>
+      <Navbar className={`${styles.navbar} fixed-top`}>
         <div className={styles.brandContainer}>
-          <div className={styles.circle}>LS</div>
-          <div>
-            <Link href="/" passHref legacyBehavior>
-              <a className={styles.brandTextHome} onClick={handleClose}>
-                Lucas Silvestre
-              </a>
-            </Link>
-            <div className={styles.subtitle}>Full Stack Developer</div>
-          </div>
+          <Link href="/" passHref legacyBehavior>
+            <a
+              className={`${styles.brandTextContainer} ${styles.button}`}
+              onClick={handleClose}
+            >
+              <span className={styles.brandTextHome}>Lucas Silvestre</span>
+              <span className={styles.subtitle}>Full Stack Developer</span>
+            </a>
+          </Link>
         </div>
+
         <Nav className="ml-auto d-flex align-items-center">
           <Nav.Link href="/cv.pdf" target="_blank" className={styles.cvLink}>
-            CV
-            <i class="bi bi-download"></i>
+            <i className="bi bi-download"></i>
           </Nav.Link>
           <Nav.Link onClick={handleShow} className={styles.menuButton}>
             <motion.div
@@ -69,15 +70,12 @@ const MyNavbar = () => {
           >
             <div className={styles.modalHeader}>
               <div className={styles.brandContainerModal}>
-                <div className={styles.circle}>LS</div>
-                <div>
-                  <Link href="/" passHref legacyBehavior>
-                    <a className={styles.brandText} onClick={handleClose}>
-                      Lucas Silvestre
-                    </a>
-                  </Link>
-                  <div className={styles.subtitle}>Full Stack Developer</div>
-                </div>
+                <Link href="/" passHref legacyBehavior>
+                  <a className={styles.brandText} onClick={handleClose}>
+                    Lucas Silvestre
+                  </a>
+                </Link>
+                <div className={styles.subtitle}>Full Stack Developer</div>
               </div>
               <div className={styles.modalClose} onClick={handleClose}>
                 CLOSE
@@ -110,7 +108,7 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <img src="/images/about.jpg" alt="About me" />
+                          <img src="/images/lucas.jpg" alt="Projects" />
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -124,7 +122,12 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <video src="/video/maceio1.mov" autoPlay></video>
+                          <video
+                            src="/video/maceio1.mov"
+                            autoPlay
+                            loop
+                            muted
+                          ></video>
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -138,7 +141,12 @@ const MyNavbar = () => {
                     target="_blank"
                     onMouseEnter={() =>
                       handleMouseEnter(
-                        <video src="/video/maceio2.mov" autoPlay></video>
+                        <video
+                          src="/video/maceio2.mov"
+                          autoPlay
+                          loop
+                          muted
+                        ></video>
                       )
                     }
                     onMouseLeave={handleMouseLeave}
@@ -163,6 +171,12 @@ const MyNavbar = () => {
                     href="/cv.pdf"
                     target="_blank"
                     className={`${styles.navLink} ${styles.cvLinkModal}`}
+                    onMouseEnter={() =>
+                      handleMouseEnter(
+                        <img src="/images/cv.png" alt="Currículo" />
+                      )
+                    }
+                    onMouseLeave={handleMouseLeave}
                   >
                     CV
                   </Nav.Link>

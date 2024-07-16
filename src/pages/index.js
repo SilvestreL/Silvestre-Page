@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000); 
+    }, 2000);
 
     const handleScroll = () => {
       const newOpacity = 1 - window.scrollY / 500;
@@ -23,8 +24,6 @@ const HomePage = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
 
   return (
     <div>
@@ -37,7 +36,9 @@ const HomePage = () => {
           <Skeleton height={50} width={`60%`} />
         </div>
       ) : (
-        <Container>
+        <Container className="mt-5 pt-5">
+          {" "}
+          {/* Adiciona margem superior e padding superior */}
           <Row className="my-5">
             <Col md={6} className="text-left">
               <h1 className={styles.mainHeading}>Lucas Silvestre</h1>
@@ -71,7 +72,6 @@ const HomePage = () => {
               />
             </Col>
           </Row>
-
           <Row>
             <p className={styles.mainHeading}> Selected Projects</p>
             <h1 className={styles.subHeading}>Web developer </h1>
@@ -120,7 +120,6 @@ const HomePage = () => {
               </Carousel>
             </Col>
           </Row>
-
           <Row className="my-5">
             <Col>
               <h3 className={styles.servicesHeading}>My Services</h3>

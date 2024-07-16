@@ -1,104 +1,98 @@
 /* styles/Home.module.css */
+
+/* Container principal para a estrutura flexível */
 .skeletonContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Estilização para o cabeçalho principal */
 .mainHeading {
-  font-weight: bold;
-  font-family: "Helvetica Now Display DW", sans-serif;
-  font-size: .875rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 0px;
-  font-weight: 400;
-  letter-spacing: .4em;
-  color: #878a8f;
+  font-weight: 400; /* Define o peso da fonte */
+  font-size: .875rem; /* Define o tamanho da fonte */
+  line-height: 1.25rem; /* Define a altura da linha */
+  text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+  padding-top: 5px; /* Adiciona preenchimento superior */
+  padding-bottom: 0; /* Remove preenchimento inferior */
+  letter-spacing: .4em; /* Define o espaçamento entre letras */
+  color: #878a8f; /* Define a cor do texto */
 }
 
+/* Estilização para o subtítulo */
 .subHeading {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  font-family: "Helvetica Now Display DW", sans-serif;
-  font-weight: 800;
-  letter-spacing: -.01em;
-  color: #0f141e;
-  font-size: 3.875rem;
-  line-height: 4.0625rem;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
+  font-weight: 800; /* Define o peso da fonte */
+  letter-spacing: -.01em; /* Define o espaçamento entre letras */
+  color: #0f141e; /* Define a cor do texto */
+  font-size: 3.875rem; /* Define o tamanho da fonte */
+  line-height: 4.0625rem; /* Define a altura da linha */
+  padding-top: 5px; /* Adiciona preenchimento superior */
+  padding-bottom: 5px; /* Adiciona preenchimento inferior */
+  margin-bottom: 1rem; /* Adiciona margem inferior */
 }
 
+/* Estilização para os parágrafos */
 .paragraph {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-top: 20px;
-  font-weight: 500;
-  color: #878a8f;
-  letter-spacing: normal;
-  font-size: 1.375rem;
-  line-height: 1.875rem;
-  padding-top: 2px;
-  padding-bottom: 3px;
-  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 500; /* Define o peso da fonte */
+  font-size: 1.375rem; /* Define o tamanho da fonte */
+  line-height: 1.875rem; /* Define a altura da linha */
+  color: #878a8f; /* Define a cor do texto */
+  margin-top: 20px; /* Adiciona margem superior */
+  padding-top: 2px; /* Adiciona preenchimento superior */
+  padding-bottom: 3px; /* Adiciona preenchimento inferior */
 }
 
+/* Estilização para os links */
 .link {
-  font-weight: bold;
-  margin-right: 10px;
-  font-size: 1.125rem;
-  font-family: "Helvetica Now Display DW", sans-serif;
-  display: inline-block;
-  color: #000;
+  font-weight: bold; /* Define o peso da fonte */
+  font-size: 1.125rem; /* Define o tamanho da fonte */
+  margin-right: 10px; /* Adiciona margem à direita */
+  display: inline-block; /* Define o display como inline-block */
+  color: #000; /* Define a cor do texto */
 }
 
 .link:hover {
-  text-decoration: underline;
-  
+  text-decoration: underline; /* Adiciona sublinhado ao texto no hover */
 }
 
+/* Estilização para a imagem do perfil */
 .profileImage {
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.5s ease-out;
+  max-width: 100%; /* Define a largura máxima como 100% */
+  height: auto; /* Define a altura automática */
+  transition: opacity 0.5s ease-out; /* Define uma transição suave para a opacidade */
 }
 
+/* Estilização para o cabeçalho dos serviços */
 .servicesHeading {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0 0 10px;
-  font-family: "Helvetica Now Display DW", sans-serif;
-
+  font-weight: bold; /* Define o peso da fonte */
+  font-size: 36px; /* Define o tamanho da fonte */
+  margin: 0 0 10px; /* Adiciona margem inferior */
 }
 
+/* Estilização para a lista de serviços */
 .servicesList {
-  color: #999;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-family: "Helvetica Now Display DW", sans-serif;
-
+  color: #999; /* Define a cor do texto */
+  letter-spacing: 1px; /* Define o espaçamento entre letras */
+  margin-bottom: 10px; /* Adiciona margem inferior */
 }
 
+/* Contêiner de texto centralizado */
 .textContainer {
-  text-align: center;
-  margin: 50px 0;
+  text-align: center; /* Centraliza o texto */
+  margin: 50px 0; /* Adiciona margem superior e inferior */
 }
 
+/* Estilização para os subtítulos */
 .subtitle {
-  color: #999;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-family: "Helvetica Now Display DW", sans-serif;
+  color: #999; /* Define a cor do texto */
+  letter-spacing: 1px; /* Define o espaçamento entre letras */
+  text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+  margin-bottom: 10px; /* Adiciona margem inferior */
 }
 
+/* Estilização para o texto principal */
 .mainText {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0 0 20px;
-  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: bold; /* Define o peso da fonte */
+  font-size: 36px; /* Define o tamanho da fonte */
+  margin: 0 0 20px; /* Adiciona margem inferior */
 }
-
