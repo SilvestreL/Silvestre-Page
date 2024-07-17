@@ -1,79 +1,91 @@
 .about {
-  padding: 50px 0;
-}
-
-.about h2 {
-  margin-bottom: 20px;
-}
-
-.about h1 {
-  margin-bottom: 20px;
-}
-
-.about p {
-  margin-bottom: 20px;
-}
-
-.carousel img {
-  max-height: 400px;
+  padding: 150px 30px 0px 30px; /* Espaçamento superior e inferior da seção */
+  box-sizing: border-box;
   
-}
-
-.services {
-  margin-bottom: 50px;
-}
-
-.services h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.faqTitle {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.details {
-  margin-bottom: 20px;
-}
-
-.details summary {
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 10px;
 }
 
 .few {
-  color: #878A8F;
-  font-size: 15px;
-  padding: 5px 0 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: 'Helvetica Now Display DW', sans-serif;
+  font-size: 0.875rem; /* Define o tamanho da fonte do subtítulo */
+  color: #878a8f; /* Define a cor do texto do subtítulo como cinza claro */
+  text-transform: uppercase; /* Transforma o texto do subtítulo para letras maiúsculas */
+  letter-spacing: 2px; /* Aumenta o espaçamento entre as letras do subtítulo */
+  text-align: center; /* Centraliza o texto do subtítulo */
+  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do subtítulo */
 }
 
 .title {
-  font-family: "Helvetica Now Display DW", sans-serif;
-  font-weight: 800;
+  font-size: 2.5rem;; /* Define o tamanho da fonte do título principal */
+  font-weight: 800; /* Define a espessura da fonte como extra-negrito */
+  color: #0f141e; /* Define a cor do texto do título principal como preto */
+  text-align: center; /* Justifica o texto do título principal */
+  line-height: 3.125rem;; /* Define a altura da linha */
+  margin-bottom: 30px; /* Adiciona espaço (margem) abaixo do título principal */
+  padding-top: 4px;
+  padding-bottom: 1px;
   letter-spacing: -.01em;
-  color: #0f141e;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 0px 10px 10px ;
-
-}
-.description {
-  color: #878a8f;
-  text-decoration: none;
+  font-style: normal;
   font-family: "Helvetica Now Display DW", sans-serif;
-  font-size: 22px;
-  transition: all .2s cubic-bezier(.3,0,.5,1);
-  padding: 2px 0px 3px;
-  font-weight: 500;
-  letter-spacing: normal;
-  line-height: 1.875rem;
-  
-  
+}
+.container {
+  padding: 10px;
+  margin: 20px 20px 20px;
+}
+
+.description {
+  font-size: 1.125rem; /* Define o tamanho da fonte dos parágrafos */
+  color: #878a8f; /* Define a cor do texto dos parágrafos como cinza claro */
+  text-align: justify; /* Justifica o texto dos parágrafos */
+  max-width: 800px; /* Limita a largura dos parágrafos para melhorar a legibilidade */
+  margin: 0 auto; /* Centraliza os parágrafos dentro do contêiner */
+  margin-bottom: 40px; /* Adiciona espaço (margem) abaixo dos parágrafos */
+}
+
+.carousel img {
+  max-height: 400px; /* Define a altura máxima das imagens do carrossel */
+}
+
+.services {
+  margin-bottom: 50px; /* Adiciona espaço (margem) abaixo da seção de serviços */
+  display: flex; /* Define o layout flexível para a seção de serviços */
+  justify-content: space-between; /* Distribui igualmente o espaço entre os itens da seção de serviços */
+}
+
+.faqTitle {
+  font-size: 1.25rem; /* Define o tamanho da fonte do título das perguntas frequentes */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  text-align: center; /* Centraliza o texto do título das perguntas frequentes */
+  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do título das perguntas frequentes */
+}
+
+.details {
+  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo de cada detalhe */
+}
+
+.details summary {
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+  margin-bottom: 10px; /* Adiciona espaço (margem) abaixo de cada resumo */
+}
+
+.titleTools {
+  font-size: 1.125rem; /* Define o tamanho da fonte das ferramentas */
+  line-height: 1.5625rem; /* Define a altura da linha das ferramentas */
+  padding-top: 1px; /* Adiciona espaçamento (padding) superior */
+  padding-bottom: 4px; /* Adiciona espaçamento (padding) inferior */
+  font-weight: 800; /* Define a espessura da fonte como extra-negrito */
+  color: #0f141e; /* Define a cor do texto das ferramentas como preto */
+  margin: 0; /* Remove qualquer margem */
+  text-align: center; /* Centraliza o texto das ferramentas */
+  display: flex; /* Define o layout flexível para as ferramentas */
+  flex-wrap: wrap; /* Permite que as ferramentas se quebrem em várias linhas, se necessário */
+  justify-content: center; /* Centraliza as ferramentas dentro do contêiner */
+}
+
+.titleTools span {
+  margin: 0 0.5rem; /* Adiciona espaço (margem) horizontal entre cada ferramenta */
+}
+@media (min-width: 768px) and (min-height: 620px), (min-width: 1280px) {
+  .text-left-center {
+    text-align: center; /* Centraliza o texto quando as condições da media query são atendidas */
+  }
 }

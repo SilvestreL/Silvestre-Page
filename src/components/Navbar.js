@@ -108,7 +108,7 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <img src="/images/lucas.jpg" alt="Projects" />
+                          <img src="/images/lucas.jpg" alt="Projects"  width="730" height="1000" />
                         )
                       }
                       onMouseLeave={handleMouseLeave}

@@ -12,7 +12,6 @@
   }
   
   .subtitle {
-    font-family: "Helvetica Now Display DW", sans-serif;
     font-size: .875rem; /* Ajuste conforme necessário */
     color: #878a8f; /* Cor cinza claro */
     text-transform: uppercase;
@@ -25,7 +24,7 @@
   }
   
   .mainText {
-    font-family: "Helvetica Now Display DW", sans-serif;
+
     font-size: 3.875rem; /* Tamanho grande do texto principal */
     color: #0a0a14; /* Cor preta */
     font-weight: 800; /* Peso da fonte para negrito */
@@ -42,7 +41,7 @@
   }
   
   .link {
-    font-family: "Helvetica Now Display DW", sans-serif;
+   
     font-size: 1rem;
     color: #0a0a14; /* Cor preta */
     text-decoration: none;

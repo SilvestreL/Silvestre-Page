@@ -6,24 +6,24 @@ import styles from "../styles/About.module.css";
 const About = () => {
   return (
     <div className={styles.about}>
-      <Container className="text-center">
+      <Container className={`text-center ${styles.container}`}>
         <Row className="justify-content-center mb-5">
-          <Col md={12}>
+          <Col md={12} className="text-left-center">
             <h2 className={styles.few}>A Few Words About Me</h2>
-            <h1 className={styles.title}>
+            <div className={styles.title}>
               I'm Lucas Silvestre, a Project Manager T.I and FullStack
               Developer. I am extremely curious and fascinated by learning new
               things. My communication skills, problem-solving abilities, and
               relentless quest for knowledge make me a unique professional.
-            </h1>
-            <p className={styles.description}>
+            </div>
+            <div className={styles.description}>
               Over the last 3 years I have been training in the areas of project
-              management and full stack development...In my free time I like
+              management and full stack development. In my free time I like
               photography and playing different sports.
-            </p>
+            </div>
           </Col>
         </Row>
-        <Row className="justify-content-left mb-5">
+        <Row className="justify-content-center mb-5">
           <Col md={7}>
             <Carousel className={styles.carousel}>
               <Carousel.Item>
@@ -36,7 +36,7 @@ const About = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="images/lucas.jpg"
+                  src="/images/lucas.jpg"
                   alt="Segundo Slide"
                 />
               </Carousel.Item>
@@ -52,14 +52,31 @@ const About = () => {
         </Row>
         <Row className={styles.services + " mb-5"}>
           <Col md={6}>
-            <h5> Services</h5>
-            <p>Product Manager / Full-Stack Developer / System Analyst</p>
+            <h5 className={styles.few}>Services</h5>
+            <p className={styles.titleTools}>
+              <span>Product Manager</span>
+              <span>/</span>
+              <span>Full-Stack Developer</span>
+              <span>/</span>
+              <span>System Analyst</span>
+            </p>
           </Col>
           <Col md={6}>
-            <h5>Tools I Use</h5>
-            <p>
-              JavaScript / Python / ReactJS / NodeJS / Bootstrap / NextJS /
-              Databases
+            <h5 className={styles.few}>Tools I Use</h5>
+            <p className={styles.titleTools}>
+              <span>JavaScript</span>
+              <span>/</span>
+              <span>Python</span>
+              <span>/</span>
+              <span>ReactJS</span>
+              <span>/</span>
+              <span>NodeJS</span>
+              <span>/</span>
+              <span>Bootstrap</span>
+              <span>/</span>
+              <span>NextJS</span>
+              <span>/</span>
+              <span>Databases</span>
             </p>
           </Col>
         </Row>
