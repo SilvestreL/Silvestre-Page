@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css";
+import '../styles/globals.css';;
 import MyNavbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import LetsWork from "@/components/LetsWork";
 import { useRouter } from "next/router";
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

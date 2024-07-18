@@ -1,7 +1,30 @@
 /* Global Styles */
-body {
+html, body {
   font-family: "Helvetica Now Display DW", sans-serif; /* Define a fonte padrão do corpo */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Home.module.css */
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.few {
+  font-size: 0.875rem; /* Define o tamanho da fonte do subtítulo */
+  color: #878a8f; /* Define a cor do texto do subtítulo como cinza claro */
+  text-transform: uppercase; /* Transforma o texto do subtítulo para letras maiúsculas */
+  letter-spacing: 2px; /* Aumenta o espaçamento entre as letras do subtítulo */
+  text-align: center; /* Centraliza o texto do subtítulo */
+  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do subtítulo */
+}

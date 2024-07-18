@@ -3,12 +3,13 @@ import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/About.module.css";
 
+
 const About = () => {
   return (
     <div className={styles.about}>
       <Container className={`text-center ${styles.container}`}>
-        <Row className="justify-content-center mb-5">
-          <Col md={12} className="text-left-center">
+        <Row className=" mb-5">
+          <Col md={12} className="justify-content-center">
             <h2 className={styles.few}>A Few Words About Me</h2>
             <div className={styles.title}>
               I'm Lucas Silvestre, a Project Manager T.I and FullStack
@@ -80,7 +81,7 @@ const About = () => {
             </p>
           </Col>
         </Row>
-        <h3 className={styles.faqTitle}>Usual Questions</h3>
+        <h3 className={styles.few}>Usual Questions</h3>
         <Row className="mb-5">
           <Col md={6}>
             <details className={styles.details}>

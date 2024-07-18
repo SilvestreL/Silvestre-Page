@@ -1,7 +1,20 @@
 .about {
   padding: 150px 30px 0px 30px; /* Espaçamento superior e inferior da seção */
   box-sizing: border-box;
-  
+}
+
+.title {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título principal */
+  font-weight: 800; /* Define a espessura da fonte como extra-negrito */
+  color: #0f141e; /* Define a cor do texto do título principal como preto */
+  text-align: center; /* Centraliza o texto do título principal */
+  line-height: 3.125rem; /* Define a altura da linha */
+  margin-bottom: 30px; /* Adiciona espaço (margem) abaixo do título principal */
+  padding-top: 4px;
+  padding-bottom: 1px;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  font-family: "Helvetica Now Display DW", sans-serif;
 }
 
 .few {
@@ -13,19 +26,6 @@
   margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do subtítulo */
 }
 
-.title {
-  font-size: 2.5rem;; /* Define o tamanho da fonte do título principal */
-  font-weight: 800; /* Define a espessura da fonte como extra-negrito */
-  color: #0f141e; /* Define a cor do texto do título principal como preto */
-  text-align: center; /* Justifica o texto do título principal */
-  line-height: 3.125rem;; /* Define a altura da linha */
-  margin-bottom: 30px; /* Adiciona espaço (margem) abaixo do título principal */
-  padding-top: 4px;
-  padding-bottom: 1px;
-  letter-spacing: -.01em;
-  font-style: normal;
-  font-family: "Helvetica Now Display DW", sans-serif;
-}
 .container {
   padding: 10px;
   margin: 20px 20px 20px;
@@ -83,9 +83,4 @@
 
 .titleTools span {
   margin: 0 0.5rem; /* Adiciona espaço (margem) horizontal entre cada ferramenta */
-}
-@media (min-width: 768px) and (min-height: 620px), (min-width: 1280px) {
-  .text-left-center {
-    text-align: center; /* Centraliza o texto quando as condições da media query são atendidas */
-  }
 }
