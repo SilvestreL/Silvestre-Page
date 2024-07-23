@@ -1,71 +1,53 @@
+/* About.module.css */
+
 .about {
-  padding: 150px 30px 0px 30px; /* Espaçamento superior e inferior da seção */
+  padding: 150px 30px 0px 30px;
   box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.few {
+  font-size: 0.875rem;
+  color: #878a8f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  max-width:100%; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+
+.few2 {
+  font-size: 0.875rem;
+  color: #878a8f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  text-decoration: underline;
+
+
 }
 
 .title {
-  font-size: 2.5rem; /* Define o tamanho da fonte do título principal */
-  font-weight: 800; /* Define a espessura da fonte como extra-negrito */
-  color: #0f141e; /* Define a cor do texto do título principal como preto */
-  text-align: center; /* Centraliza o texto do título principal */
-  line-height: 3.125rem; /* Define a altura da linha */
-  margin-bottom: 30px; /* Adiciona espaço (margem) abaixo do título principal */
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  line-height: 3.125rem;
+  margin-bottom: 30px;
   padding-top: 4px;
   padding-bottom: 1px;
   letter-spacing: -0.01em;
   font-style: normal;
-  font-family: "Helvetica Now Display DW", sans-serif;
-}
-
-.few {
-  font-size: 0.875rem; /* Define o tamanho da fonte do subtítulo */
-  color: #878a8f; /* Define a cor do texto do subtítulo como cinza claro */
-  text-transform: uppercase; /* Transforma o texto do subtítulo para letras maiúsculas */
-  letter-spacing: 2px; /* Aumenta o espaçamento entre as letras do subtítulo */
-  text-align: center; /* Centraliza o texto do subtítulo */
-  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do subtítulo */
-}
-
-.container {
   padding: 10px;
-  margin: 20px 20px 20px;
 }
 
-.description {
-  font-size: 1.125rem; /* Define o tamanho da fonte dos parágrafos */
-  color: #878a8f; /* Define a cor do texto dos parágrafos como cinza claro */
-  text-align: justify; /* Justifica o texto dos parágrafos */
-  max-width: 800px; /* Limita a largura dos parágrafos para melhorar a legibilidade */
-  margin: 0 auto; /* Centraliza os parágrafos dentro do contêiner */
-  margin-bottom: 40px; /* Adiciona espaço (margem) abaixo dos parágrafos */
-}
-
-.carousel img {
-  max-height: 400px; /* Define a altura máxima das imagens do carrossel */
-}
-
-.services {
-  margin-bottom: 50px; /* Adiciona espaço (margem) abaixo da seção de serviços */
-  display: flex; /* Define o layout flexível para a seção de serviços */
-  justify-content: space-between; /* Distribui igualmente o espaço entre os itens da seção de serviços */
-}
-
-.faqTitle {
-  font-size: 1.25rem; /* Define o tamanho da fonte do título das perguntas frequentes */
-  font-weight: bold; /* Define a espessura da fonte como negrito */
-  text-align: center; /* Centraliza o texto do título das perguntas frequentes */
-  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo do título das perguntas frequentes */
-}
-
-.details {
-  margin-bottom: 20px; /* Adiciona espaço (margem) abaixo de cada detalhe */
-}
-
-.details summary {
-  font-weight: bold; /* Define a espessura da fonte como negrito */
-  cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
-  margin-bottom: 10px; /* Adiciona espaço (margem) abaixo de cada resumo */
-}
 
 .titleTools {
   font-size: 1.125rem; /* Define o tamanho da fonte das ferramentas */
@@ -81,6 +63,91 @@
   justify-content: center; /* Centraliza as ferramentas dentro do contêiner */
 }
 
-.titleTools span {
-  margin: 0 0.5rem; /* Adiciona espaço (margem) horizontal entre cada ferramenta */
+.description {
+  font-size: 1.125rem;
+  color: #878a8f;
+  text-align: justify;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  max-height: 400px;
+}
+
+.services {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.summary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.usualText {
+  font-size: 1rem;
+  color: #878a8f;
+  text-align: justify;
+}
+
+
+/* Estilo básico para a lista */
+.styled-list {
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.styled-list li {
+  background-color: #f4f4f4; /* Cor de fundo suave para os itens da lista */
+  border: 1px solid #e0e0e0; /* Borda clara ao redor dos itens */
+  margin-bottom: 10px; /* Espaço entre os itens */
+  padding: 10px 15px; /* Preenchimento dentro dos itens */
+  border-radius: 1px; /* Canto arredondado para os itens */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para a cor de fundo e transformação */
+  display: flex; /* Define o layout flexível para os itens */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  font-family: 'Arial', sans-serif; /* Define a fonte */
+  font-size: 16px; /* Define o tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
+
+/* Adiciona uma cor de fundo diferente ao passar o mouse */
+.styled-list li:hover {
+  background-color: #e9e9e9;
+  transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+/* Adiciona um ícone personalizado antes dos itens da lista */
+.styled-list li::before {
+  content: "\2022"; /* Caractere do ponto da lista */
+  color: #3498db; /* Cor do ponto */
+  font-size: 1.5em; /* Tamanho maior para o ponto */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Estilização adicional para a lista */
+.styled-list li {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  font-family: 'Arial', sans-serif; /* Define a fonte */
+  font-size: 16px; /* Define o tamanho da fonte */
+  color: #333; /* Cor do texto */
 }
