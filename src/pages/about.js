@@ -6,15 +6,15 @@ import styles from "../styles/About.module.css";
 const About = () => {
   return (
     <div className={styles.about}>
-      <Container className={`text-center ${styles.container}`}>
+      <Container className={styles.container}>
         <Row className="mb-5">
-          <Col md={12} className="justify-content-center">
+          <Col>
             <h2 className={styles.few}>A Few Words About Me</h2>
             <h1 className={styles.title}>
-              I'm Lucas Silvestre, a Project Manager T.I and FullStack
-              Developer. I am extremely curious and fascinated by learning new
-              things. My communication skills, problem-solving abilities, and
-              relentless quest for knowledge make me a unique professional.
+              Hello, my name is Lucas Silvestre. An extremely curious person and
+              fascinated with learning new things. I like to add value to
+              people's lives with my technology skills. I believe that this
+              tireless search for knowledge makes me a unique professional.
             </h1>
             <p className={styles.description}>
               Over the last 3 years I have been training in the areas of project
@@ -24,7 +24,7 @@ const About = () => {
           </Col>
         </Row>
         <Row className="justify-content-center mb-5">
-          <Col md={7}>
+          <Col md={8}>
             <Carousel className={styles.carousel}>
               <Carousel.Item>
                 <img
@@ -50,7 +50,7 @@ const About = () => {
             </Carousel>
           </Col>
         </Row>
-        <Row className={`${styles.services} mb-5`}>
+        <Row className={styles.services}>
           <Col md={6}>
             <h5 className={styles.few}>Services</h5>
             <p className={styles.titleTools}>

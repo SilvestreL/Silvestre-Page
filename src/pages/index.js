@@ -65,7 +65,7 @@ const HomePage = () => {
             </Col>
             <Col md={6} className="text-right">
               <img
-                src="/images/lucas.jpg"
+                src="/images/lucasSemFundo.jpg"
                 alt="Lucas Silvestre"
                 className={styles.profileImage}
                 style={{ opacity }}
