@@ -6,7 +6,6 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [opacity, setOpacity] = useState(1);
@@ -80,7 +79,7 @@ const HomePage = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://via.placeholder.com/800x400"
+                    src="/images/marketplace.png"
                     alt="First slide"
                   />
                   <Carousel.Caption>

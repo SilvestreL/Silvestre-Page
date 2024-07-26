@@ -71,14 +71,21 @@ const MyNavbar = () => {
             <div className={styles.modalHeader}>
               <div className={styles.brandContainerModal}>
                 <Link href="/" passHref legacyBehavior>
-                  <a className={styles.brandText} onClick={handleClose}>
-                    Lucas Silvestre
+                  <a
+                    className={styles.brandTextContainer}
+                    onClick={handleClose}
+                  >
+                    <span className={styles.brandTextHomeModal}>
+                      Lucas Silvestre
+                    </span>
+                    <span className={styles.subtitle}>
+                      Full Stack Developer
+                    </span>
                   </a>
                 </Link>
-                <div className={styles.subtitle}>Full Stack Developer</div>
               </div>
               <div className={styles.modalClose} onClick={handleClose}>
-                CLOSE
+                &times;
               </div>
             </div>
             <div className={styles.modalBody}>
@@ -94,7 +101,12 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <img src="/images/palestra.jpg" alt="Projects" />
+                          <img
+                            src="/images/palestra.jpg"
+                            alt="Projects"
+                            width="40%"
+                            height="100%"
+                          />
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -108,7 +120,12 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <img src="/images/lucas.jpg" alt="Projects"  width="730" height="1000" />
+                          <img
+                            src="/images/lucas.jpg"
+                            alt="About"
+                            width="50%"
+                            height="100%"
+                          />
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -122,12 +139,12 @@ const MyNavbar = () => {
                       onClick={handleClose}
                       onMouseEnter={() =>
                         handleMouseEnter(
-                          <video
-                            src="/video/maceio1.mov"
-                            autoPlay
-                            loop
-                            muted
-                          ></video>
+                          <img
+                            src="/images/pc2.jpg"
+                            alt="Contact-me"
+                            width="50%"
+                            height="50%"
+                          />
                         )
                       }
                       onMouseLeave={handleMouseLeave}
@@ -141,12 +158,12 @@ const MyNavbar = () => {
                     target="_blank"
                     onMouseEnter={() =>
                       handleMouseEnter(
-                        <video
-                          src="/video/maceio2.mov"
-                          autoPlay
-                          loop
-                          muted
-                        ></video>
+                        <img
+                          src="/images/github2.jpg"
+                          alt="GitHub"
+                          width="80%"
+                          height="80%"
+                        />
                       )
                     }
                     onMouseLeave={handleMouseLeave}
@@ -159,7 +176,12 @@ const MyNavbar = () => {
                     target="_blank"
                     onMouseEnter={() =>
                       handleMouseEnter(
-                        <img src="/images/instagram.jpg" alt="Instagram" />
+                        <img
+                          src="/images/instagram2.jpg"
+                          alt="GitHub"
+                          width="60%"
+                          height="110%"
+                        />
                       )
                     }
                     onMouseLeave={handleMouseLeave}
@@ -171,14 +193,8 @@ const MyNavbar = () => {
                     href="/cv.pdf"
                     target="_blank"
                     className={`${styles.navLink} ${styles.cvLinkModal}`}
-                    onMouseEnter={() =>
-                      handleMouseEnter(
-                        <img src="/images/cv.png" alt="Currículo" />
-                      )
-                    }
-                    onMouseLeave={handleMouseLeave}
                   >
-                    CV
+                    <i className="bi bi-download"> c.v</i>
                   </Nav.Link>
                 </Nav>
               </motion.div>

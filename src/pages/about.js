@@ -1,9 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/About.module.css";
 
 const About = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const carouselItems = [
+    {
+      src: "/images/treinamento1.jpg",
+      alt: "First Slide",
+      title: "Business",
+      description: "giving a business training session.",
+    },
+    {
+      src: "/images/cachoeira.jpg",
+      alt: "Second Slide",
+      title: "Waterfall",
+      description:
+        "enjoying a refreshing moment at the waterfall.",
+    },
+    {
+      src: "/images/american.jpg",
+      alt: "Third Slide",
+      title: "American Crime",
+      description: "at Atleta of American Crime event.",
+    },
+    {
+      src: "/images/futvolei.jpg",
+      alt: "Fourth Slide",
+      title: "Beach Soccer",
+      description:
+        "Participating in a futvolei tournament.",
+    },
+    {
+      src: "/images/jiu.jpg",
+      alt: "Fifth Slide",
+      title: "Jiu-Jitsu",
+      description: "Jiu-Jitsu competition.",
+    },
+    {
+      src: "/images/treinamento1.jpg",
+      alt: "Sixth Slide",
+      title: "Training",
+      description: " during a training session.",
+    },
+  ];
+
+  const handleSelect = (selectedIndex, e) => {
+    setActiveIndex(selectedIndex);
+  };
+
   return (
     <div className={styles.about}>
       <Container className={styles.container}>
@@ -19,46 +66,45 @@ const About = () => {
             <p className={styles.description}>
               Over the last 3 years I have been training in the areas of project
               management and full stack development. In my free time I like
-              photography and playing different sports.
+              photography and playing different sports. Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Delectus voluptates consectetur
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-center mb-5">
+        <Row className="justify-content-left mb-5">
           <Col md={8}>
-            <Carousel className={styles.carousel}>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="/images/palestra.jpg"
-                  alt="Primeiro Slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="/images/lucas.jpg"
-                  alt="Segundo Slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="/images/mcz.jpg"
-                  alt="Terceiro Slide"
-                />
-              </Carousel.Item>
+            <Carousel
+              className={styles.carousel}
+              activeIndex={activeIndex}
+              onSelect={handleSelect}
+            >
+              {carouselItems.map((item, index) => (
+                <Carousel.Item key={index}>
+                  <img
+                    className="d-block w-100"
+                    src={item.src}
+                    alt={item.alt}
+                  />
+                </Carousel.Item>
+              ))}
             </Carousel>
+          </Col>
+          <Col md={4} className={styles.carouselText}>
+            <div className={styles.textContent}>
+              <h3>{carouselItems[activeIndex].title}</h3>
+              <p>{carouselItems[activeIndex].description}</p>
+            </div>
           </Col>
         </Row>
         <Row className={styles.services}>
           <Col md={6}>
             <h5 className={styles.few}>Services</h5>
             <p className={styles.titleTools}>
-              <span>Product Manager</span>
-              <span>/</span>
-              <span>Full-Stack Developer</span>
-              <span>/</span>
-              <span>System Analyst</span>
+              <span> Product Manager</span>
+              <span> / </span>
+              <span> Full-Stack Developer </span>
+              <span> / </span>
+              <span> System Analyst </span>
             </p>
           </Col>
           <Col md={6}>
