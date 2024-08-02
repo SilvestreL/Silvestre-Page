@@ -58,7 +58,6 @@
   color: white;
 }
 
-
 .brandText {
   color: #fafbfbbe;
 }
@@ -163,22 +162,35 @@
   opacity: 0.5;
 }
 
-/* Rodapé do modal */
-.modalFooter {
-  padding: 1rem;
-  font-size: 0.8rem;
-  color: #999;
-  text-align: center;
+/* Título do menu */
+.menuTitle {
+  font-size: .875rem;
+  font-weight: 400;
+  margin-bottom: .1rem;
+  color: #777; /* Cor do título do menu */
+  text-transform: uppercase;
+  letter-spacing: .2em;
 }
 
 /* Link de navegação */
+.navLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .0001px; /* Remove o espaço entre os links */
+}
+
 .navLink {
   color: #999 !important;
   font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  cursor: pointer;
+  font-weight: 800;
+  line-height: 4.0625rem;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  letter-spacing: -0.01em;
+  position: relative;
+  list-style-type: none;
   text-align: center;
+  margin-bottom: 0; /* Remove o espaço inferior */
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 

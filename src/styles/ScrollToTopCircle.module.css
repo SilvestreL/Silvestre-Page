@@ -1,0 +1,31 @@
+/* components/ScrollToTopCircle.module.css */
+.circleContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Coloca no lado direito */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o ícone esteja acima de outros elementos */
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    font-size: 24px;
+    color: white;
+  }
+  
+  .circle:hover {
+    background-color: #555;
+    color: white;
+  }
+  

@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import AnimatedCircle from "../components/AnimatedCircle"; 
+import ScrollToTopCircle from "../components/ScrollToTopCircle";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [opacity, setOpacity] = useState(1);
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,6 +29,25 @@ const HomePage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const services = [
+    "FullStack Development",
+    "Project Management",
+    "System Analysist",
+  ];
+
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.5,
+        type: "spring",
+        stiffness: 50,
+      },
+    }),
+  };
+
   return (
     <div>
       {loading ? (
@@ -36,8 +60,6 @@ const HomePage = () => {
         </div>
       ) : (
         <Container className="mt-5 pt-5">
-          {" "}
-          {/* Adiciona margem superior e padding superior */}
           <Row className="my-5">
             <Col md={6} className="text-left">
               <h1 className={styles.mainHeading}>Lucas Silvestre</h1>
@@ -50,13 +72,13 @@ const HomePage = () => {
                 day I use the most current market technologies. I have always
                 been interested in TI project management, something embraced by
                 my first degree in Law. The ability to communicate and solve
-                problems, in addition to a relentless quest for knowledge
+                problems, in addition to a relentless quest for knowledge.
               </p>
               <div>
                 <Link href="/projects" passHref legacyBehavior>
                   <a className={styles.link}>View Projects</a>
                 </Link>
-                {"  or    "}
+                {" or "}
                 <Link href="/about" passHref legacyBehavior>
                   <a className={styles.link}>Read About Me</a>
                 </Link>
@@ -72,63 +94,54 @@ const HomePage = () => {
             </Col>
           </Row>
           <Row>
-            <p className={styles.mainHeading}> Selected Projects</p>
-            <h1 className={styles.subHeading}>Web developer </h1>
-            <Col>
-              <Carousel>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="/images/marketplace.png"
-                    alt="First slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="https://via.placeholder.com/800x400"
-                    alt="Second slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="https://via.placeholder.com/800x400"
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
+            <p className={styles.mainHeading}>Selected Projects</p>
+            <h1 className={styles.subHeading}>Web developer</h1>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <Link href="/projects/marketplace" passHref legacyBehav>
+                <Card className={styles.cardSmall}>
+                  <Card.Img variant="top" src="/images/markeplacecard.jpg" />
+                  <Card.Body></Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col md={6}>
+              <Link href="/projects/kanban" passHref legacyBehav>
+                <Card className={styles.cardSmall}>
+                  <Card.Img variant="top" src="/images/kanban2.jpg" />
+                  <Card.Body></Card.Body>
+                </Card>
+              </Link>
             </Col>
           </Row>
           <Row className="my-5">
             <Col>
-              <h3 className={styles.servicesHeading}>My Services</h3>
-              <ul className={styles.servicesList}>
-                <li>FullStack Development</li>
-                <li>Project Management</li>
-                <li>System Analys</li>
-              </ul>
+              <h2 className={styles.subHeading}>My Services</h2>
+              <Row ref={ref}>
+                {services.map((service, index) => (
+                  <Col
+                    key={index}
+                    xs={12}
+                    md={4}
+                    className="d-flex justify-content-center"
+                  >
+                    <motion.div
+                      custom={index}
+                      initial="hidden"
+                      animate={inView ? "visible" : "hidden"}
+                      variants={variants}
+                      className={styles.serviceItem}
+                    >
+                      {service}
+                    </motion.div>
+                  </Col>
+                ))}
+              </Row>
             </Col>
           </Row>
+          <AnimatedCircle /> 
+          <ScrollToTopCircle />
         </Container>
       )}
     </div>

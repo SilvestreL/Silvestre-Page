@@ -2,6 +2,7 @@
   padding: 150px 30px 0px 30px;
   box-sizing: border-box;
   text-align: center;
+  max-width: 100%;
 }
 
 .few {
@@ -31,7 +32,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #000000;
+  color: #0f141e;
   text-align: center;
   line-height: 3.2rem;
   padding-top: 4px;
@@ -43,7 +44,6 @@
   margin-left: 140px;
   margin-right: 140px;
   font-family: "Helvetica Now Display DW", sans-serif;
-  font-size: 40px;
 }
 
 .titleTools {
@@ -69,12 +69,6 @@
   margin-right: 240px;
   font-size: 21px;
   font-weight: 500;
-}
-
-.carousel img {
-  max-height: 600px;
-  
-  
 }
 
 .services {
@@ -106,7 +100,6 @@
   text-align: justify;
 }
 
-/* Estilo básico para a lista */
 .styled-list {
   list-style-type: none;
   padding: 0;
@@ -142,38 +135,90 @@
   list-style: none;
 }
 
-.styled-list li {
-  display: flex;
-  align-items: center;
-  font-family: "Helvetica Now Display DW", sans-serif;
-  font-size: 16px;
-  color: #333;
-  list-style: none;
+.card-img {
+  object-fit: cover;
 }
 
-.carousel {
-  display: flex;
-  align-items: left;
-  margin-left: 20%;
+.card {
+  width: 100%;
 }
 
-.carouselText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 20px;
-}
-
-.textContent {
+.polaroid {
+  position: relative;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
   margin-bottom: 20px;
 }
 
-.textContent h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.textContent p {
-  font-size: 1rem;
-  color: #555;
+.polaroid p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.textAboveImage {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.cardImgBottomRow {
+  max-height: 300px; /* Limite de altura para as imagens da segunda fila */
+}
+
+.cardBody {
+  height: 100%; /* Garantir que o card body ocupe todo o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:unset;
+
+
+}
+
+.blockquote-footer {
+  margin-top: auto; /* Empurra o footer para o final do contêiner */
+  text-align: center; /* Centraliza o footer horizontalmente */
+}
+
+.cardBodyEqualHeight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 10px 0px 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleTools {
+    font-size: 1rem;
+  }
 }

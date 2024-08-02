@@ -1,35 +1,35 @@
 import React from "react";
 import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import { Card, Container, Row, Col } from "react-bootstrap";
+import styles from "../styles/Projects.module.css";
 
 const projects = [
   {
-    href: "/projects/kanbanboard",
-    imgSrc: "/path/to/invision-studio-image.png",
+    href: "/projects/kanban",
+    imgSrc: "/images/kanban2.jpg",
     imgAlt: "Kanban Board",
     text: "Kanban Board",
   },
   {
-    href: "/projects/triniso",
-    imgSrc: "/path/to/triniso-image.png",
+    href: "/projects/kanban",
+    imgSrc: "/images/clinicamedica.jpg",
     imgAlt: "Clinica Médica",
-    text: "Clinica Médica - Página para agendamento de consultas",
+    text: "Clinica Médica",
   },
   {
     href: "/projects/marketplace",
-    imgSrc: "/300.png",
+    imgSrc: "/images/markeplacecard.jpg",
     imgAlt: "Marketplace Project",
-    text: "Marketplace Project - Uma aplicação FullStack",
+    text: "Marketplace Project",
   },
-  // Adicione mais projetos conforme necessário
+
 ];
 
 const Projects = () => {
   return (
     <Container className="mt-5">
-      <h1 className="text-center mb-4">Case Studies</h1>
+      <h1 className={styles.subHeading}>Projects</h1>
       <Row>
         {projects.map((project, index) => (
           <Col md={6} lg={4} className="mb-4" key={index}>

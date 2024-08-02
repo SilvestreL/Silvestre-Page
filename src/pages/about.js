@@ -1,55 +1,44 @@
-import React, { useState } from "react";
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/About.module.css";
 
 const About = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const carouselItems = [
+  const cards = [
     {
-      src: "/images/treinamento1.jpg",
-      alt: "First Slide",
-      title: "Business",
-      description: "giving a business training session.",
+      imgSrc: "/images/futvolei.jpg",
+      title: "Footvolley",
+      text: "Competition and sport have always been present.",
     },
     {
-      src: "/images/cachoeira.jpg",
-      alt: "Second Slide",
-      title: "Waterfall",
-      description:
-        "enjoying a refreshing moment at the waterfall.",
+      imgSrc: "/images/jiu.jpg",
+      title: "Jiu Jitsu",
+      text: "Where the body tires and the mind rests.",
     },
     {
-      src: "/images/american.jpg",
-      alt: "Third Slide",
-      title: "American Crime",
-      description: "at Atleta of American Crime event.",
+      imgSrc: "/images/palestra3.jpg",
+      title: "Work",
+      text: "Obsession beats talent.",
     },
     {
-      src: "/images/futvolei.jpg",
-      alt: "Fourth Slide",
-      title: "Beach Soccer",
-      description:
-        "Participating in a futvolei tournament.",
+      text: "“I always try to surpass myself. I've always been like this.”",
+      footer: "- Lionel Messi",
     },
     {
-      src: "/images/jiu.jpg",
-      alt: "Fifth Slide",
-      title: "Jiu-Jitsu",
-      description: "Jiu-Jitsu competition.",
+      text: "If you want to be successful, you need total dedication, seek your ultimate limit and give your best.",
+      footer: "- Ayrton Senna",
     },
     {
-      src: "/images/treinamento1.jpg",
-      alt: "Sixth Slide",
-      title: "Training",
-      description: " during a training session.",
+      imgSrc: "/images/pc2.jpg",
+      title: "Technologic",
+      text: " “If there is a way to do it better, find it.” - Thomas Edison",
+    },
+    {
+      imgSrc: "/images/disney.jpg",
+      title: "Trips",
+      text: "With each new trip, we return home with new sparks in our eyes.",
     },
   ];
-
-  const handleSelect = (selectedIndex, e) => {
-    setActiveIndex(selectedIndex);
-  };
 
   return (
     <div className={styles.about}>
@@ -71,120 +60,80 @@ const About = () => {
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-left mb-5">
-          <Col md={8}>
-            <Carousel
-              className={styles.carousel}
-              activeIndex={activeIndex}
-              onSelect={handleSelect}
-            >
-              {carouselItems.map((item, index) => (
-                <Carousel.Item key={index}>
-                  <img
-                    className="d-block w-100"
-                    src={item.src}
-                    alt={item.alt}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          </Col>
-          <Col md={4} className={styles.carouselText}>
-            <div className={styles.textContent}>
-              <h3>{carouselItems[activeIndex].title}</h3>
-              <p>{carouselItems[activeIndex].description}</p>
-            </div>
-          </Col>
-        </Row>
-        <Row className={styles.services}>
-          <Col md={6}>
-            <h5 className={styles.few}>Services</h5>
-            <p className={styles.titleTools}>
-              <span> Product Manager</span>
-              <span> / </span>
-              <span> Full-Stack Developer </span>
-              <span> / </span>
-              <span> System Analyst </span>
-            </p>
-          </Col>
-          <Col md={6}>
-            <h5 className={styles.few}>Tools I Use</h5>
-            <p className={styles.titleTools}>
-              <span>JavaScript</span>
-              <span>/</span>
-              <span>Python</span>
-              <span>/</span>
-              <span>ReactJS</span>
-              <span>/</span>
-              <span>NodeJS</span>
-              <span>/</span>
-              <span>Bootstrap</span>
-              <span>/</span>
-              <span>NextJS</span>
-              <span>/</span>
-              <span>Databases</span>
-            </p>
-          </Col>
-        </Row>
-        <h3 className={styles.few2}>Usual Questions</h3>
-        <Row className="mb-5">
-          <Col md={6}>
-            <details className={styles.details}>
-              <summary className={styles.summary}>Academic Background</summary>
-              <ul className={styles["styled-list"]}>
-                <li>Information Systems (2023 - 2027) - Cesmac/AL</li>
-                <li>Law (2011 - 2016) - Unit/AL</li>
-                <li>
-                  Postgraduate in Administrative and Constitutional Law (2017 -
-                  2019)
-                </li>
-              </ul>
-            </details>
-          </Col>
-          <Col md={6}>
-            <details className={styles.details}>
-              <summary className={styles.summary}>Titles</summary>
-              <ul className={styles["styled-list"]}>
-                <li>
-                  Member of the Innovation and Legal Technology and Data
-                  Protection Commission
-                </li>
-              </ul>
-            </details>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={6}>
-            <details className={styles.details}>
-              <summary className={styles.summary}>Work Experience</summary>
-              <ul className={styles["styled-list"]}>
-                <li>System Analyst / Project Manager T.I (2023 - 2024)</li>
-                <li>Full Stack Developer - Freelancer (2022 - 2024)</li>
-                <li>
-                  Technical Advisor for Special and Judicial Purchases (2020 -
-                  2023)
-                </li>
-                <li>Lawyer (2016 - 2024)</li>
-              </ul>
-            </details>
-          </Col>
-          <Col md={6}>
-            <details className={styles.details}>
-              <summary className={styles.summary}>Certifications</summary>
-              <ul className={styles["styled-list"]}>
-                <li>Agile Project Management with SCRUM</li>
-                <li>ITIL 4 Certification</li>
-                <li>HTML and CSS</li>
-                <li>Project Planning and Management</li>
-                <li>
-                  React from Basics to Advanced (with hooks, router, API,
-                  Projects)
-                </li>
-                <li>ITIL 4 / React / Docker / Project Manager</li>
-              </ul>
-            </details>
-          </Col>
-        </Row>
+        <Container className="py-3">
+          <h1 className={`text-center mb-5 ${styles.few}`}>50 shades of</h1>
+          <Row>
+            {cards.slice(0, 3).map((card, index) => (
+              <Col xs={12} md={4} key={index} className="mb-4">
+                <Card className={styles.polaroid}>
+                  {card.imgSrc && (
+                    <Card.Img
+                      variant="top"
+                      src={card.imgSrc}
+                      className={styles.cardImg}
+                    />
+                  )}
+                  <Card.Body>
+                    {card.title && <Card.Title>{card.title}</Card.Title>}
+                    <Card.Text>{card.text}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+          <Row>
+            <Col xs={12} md={4} className="mb-4">
+              <Card className={`${styles.polaroid} ${styles.textAboveImage}`}>
+                <Card.Img
+                  variant="top"
+                  src={cards[5].imgSrc}
+                  className={styles.cardImgBottomRow}
+                />
+                <Card.Body>
+                  {cards[5].title && <Card.Title>{cards[5].title}</Card.Title>}
+                  <Card.Text>{cards[5].text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={4} className="mb-4">
+              <Card className={`${styles.polaroid} ${styles.equalHeightCard}`}>
+                <Card.Body className={styles.cardBody}>
+                  <Card.Text>{cards[3].text}</Card.Text>
+                  {cards[3].footer && (
+                    <footer className="blockquote-footer">
+                      <br />
+                      <small className="text-muted">{cards[3].footer}</small>
+                    </footer>
+                  )}
+                </Card.Body>
+              </Card>
+              <Card className={`${styles.polaroid} ${styles.equalHeightCard}`}>
+                <Card.Body className={styles.cardBody}>
+                  <Card.Text>{cards[4].text}</Card.Text>
+                  {cards[4].footer && (
+                    <footer className="blockquote-footer">
+                      <br />
+                      <small className="text-muted">{cards[4].footer}</small>
+                    </footer>
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={4} className="mb-4">
+              <Card className={`${styles.polaroid} ${styles.textAboveImage}`}>
+                <Card.Img
+                  variant="top"
+                  src={cards[6].imgSrc}
+                  className={styles.cardImgBottomRow}
+                />
+                <Card.Body>
+                  {cards[6].title && <Card.Title>{cards[6].title}</Card.Title>}
+                  <Card.Text>{cards[6].text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </div>
   );

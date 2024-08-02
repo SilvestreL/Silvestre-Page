@@ -33,23 +33,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/projects/clinica-medica" passHref legacyBehavior>
-                  <a className={styles.projectLink}>Clinica Medica</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/concessionaria" passHref legacyBehavior>
-                  <a className={styles.projectLink}>Consessionária</a>
+                <Link href="/projects/clinicamedica" passHref legacyBehavior>
+                  <a className={styles.projectLink}vp>Clinica Medica</a>
                 </Link>
               </li>
               <li>
                 <Link href="/projects/kanban-board" passHref legacyBehavior>
                   <a className={styles.projectLink}>Kanban Board</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/secret-word" passHref legacyBehavior>
-                  <a className={styles.projectLink}>SecrectWord</a>
                 </Link>
               </li>
             </ul>

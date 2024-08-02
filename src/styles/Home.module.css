@@ -96,3 +96,46 @@
   font-size: 36px; /* Define o tamanho da fonte */
   margin: 0 0 20px; /* Adiciona margem inferior */
 }
+
+/* Classe para controlar o tamanho dos cards */
+.cardSmall {
+  width: 100%; /* Ajuste conforme necessário */
+  max-width: 600px; /* Define a largura máxima dos cards */
+  margin: auto; /* Centraliza os cards */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+  padding: 16px; /* Adiciona padding interno para espaçamento */
+  cursor: pointer;
+}
+
+.cardSmall img {
+  width: 100%; /* Ajusta a largura da imagem ao tamanho do card */
+  height: auto; /* Define a altura automática */
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards se ajustem conforme necessário */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 16px; /* Espaçamento entre os cards */
+}
+
+.card {
+  flex: 1 1 300px; /* Permite que os cards cresçam e encolham conforme necessário, com largura base de 300px */
+  max-width: 600px; /* Largura máxima dos cards */
+}
+
+.serviceItem {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.serviceItem:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

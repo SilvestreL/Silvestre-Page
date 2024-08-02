@@ -1,0 +1,12 @@
+.subHeading {
+    font-weight: 800; /* Define o peso da fonte */
+    letter-spacing: -.01em; /* Define o espaçamento entre letras */
+    color: #0f141e; /* Define a cor do texto */
+    font-size: 3.875rem; /* Define o tamanho da fonte */
+    line-height: 4.0625rem; /* Define a altura da linha */
+    padding-top: 5px; /* Adiciona preenchimento superior */
+    padding-bottom: 5px; /* Adiciona preenchimento inferior */
+    margin-top: 6.5rem;
+    margin-bottom: 2rem; /* Adiciona margem inferior */
+    text-align: center;
+}
