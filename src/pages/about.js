@@ -227,7 +227,7 @@ const About = () => {
                     React from Basics to Advanced (with hooks, router, API,
                     Projects)
                   </li>
-                  <li>ITIL 4 / React / Docker / Project Manager</li>
+                  <li> ITIL 4 / React / Docker / Project Manager /</li>
                 </ul>
               </details>
             </Col>
