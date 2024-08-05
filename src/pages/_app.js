@@ -7,6 +7,8 @@ import LetsWork from "@/components/LetsWork";
 import { useRouter } from "next/router";
 import AnimatedCircle from "@/components/AnimatedCircle";
 import ScrollToTopCircle from "@/components/ScrollToTopCircle";
+import WelcomeScreen from "@/components/WelcomeScreen";
+
 
 
 
@@ -26,6 +28,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <AnimatedCircle/> 
       <ScrollToTopCircle />
+    
       {!noLetsWorkRoutes.includes(router.pathname) && <LetsWork />}
       <Footer />
     </>

@@ -2,7 +2,6 @@
   padding: 150px 30px 0px 30px;
   box-sizing: border-box;
   text-align: center;
-  max-width: 100%;
 }
 
 .few {
@@ -32,7 +31,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #0f141e;
+  color: #000000;
   text-align: center;
   line-height: 3.2rem;
   padding-top: 4px;
@@ -75,6 +74,12 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+.separator {
+  width: 80%; /* Ajuste o tamanho do separador */
+  border-bottom: 1px solid #e0e0e0;
+  margin: 20px auto; /* Centraliza o separador horizontalmente */
 }
 
 .details {
@@ -178,9 +183,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items:unset;
-
-
+  align-items: unset;
 }
 
 .blockquote-footer {
@@ -220,5 +223,9 @@
 
   .titleTools {
     font-size: 1rem;
+  }
+
+  .separator {
+    width: 90%;
   }
 }

@@ -105,10 +105,11 @@ const MyNavbar = () => {
                       onMouseEnter={() =>
                         handleMouseEnter(
                           <img
-                            src="/images/pcdev.jpg"
+                            src="/images/pcdev2.jpg"
                             alt="Projects"
                             width="100%"
                             height="100%"
+                           
                           />
                         )
                       }
@@ -124,10 +125,11 @@ const MyNavbar = () => {
                       onMouseEnter={() =>
                         handleMouseEnter(
                           <img
-                            src="/images/lucas.jpg"
+                            src="/images/about.png"
                             alt="About"
                             width="100%"
                             height="100%"
+                            object-fit= "cover"
                           />
                         )
                       }
@@ -147,6 +149,7 @@ const MyNavbar = () => {
                             alt="Contact-me"
                             width="100%"
                             height="100%"
+                      
                           />
                         )
                       }
