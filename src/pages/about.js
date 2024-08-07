@@ -166,7 +166,7 @@ const About = () => {
                 <span> NextJS </span>
                 <span>/</span>
                 <span>Databases</span>
-                <span> oPEN ssl </span>
+                <span> Open SSL </span>
               </p>
             </Col>
           </Row>
