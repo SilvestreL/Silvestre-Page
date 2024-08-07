@@ -174,12 +174,12 @@
   flex-direction: column-reverse;
 }
 
-.cardImgBottomRow {
+.cardImgBottomRow {   
   max-height: 300px; /* Limite de altura para as imagens da segunda fila */
 }
 
 .cardBody {
-  height: 100%; /* Garantir que o card body ocupe todo o espaço disponível */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;

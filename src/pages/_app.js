@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/globals.css';;
+import "../styles/globals.css";
 import MyNavbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -7,10 +7,6 @@ import LetsWork from "@/components/LetsWork";
 import { useRouter } from "next/router";
 import AnimatedCircle from "@/components/AnimatedCircle";
 import ScrollToTopCircle from "@/components/ScrollToTopCircle";
-import WelcomeScreen from "@/components/WelcomeScreen";
-
-
-
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -26,9 +22,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <MyNavbar />
       <Component {...pageProps} />
-      <AnimatedCircle/> 
+      <AnimatedCircle />
       <ScrollToTopCircle />
-    
       {!noLetsWorkRoutes.includes(router.pathname) && <LetsWork />}
       <Footer />
     </>

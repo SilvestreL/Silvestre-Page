@@ -1,0 +1,22 @@
+
+.container {
+    margin-top: 5rem;
+  }
+  .projectOverview {
+    margin-bottom: 2rem;
+  }
+  .technologies,
+  .images {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .techTitle {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .role, .client, .year {
+    margin-top: 1rem;
+  }
+  

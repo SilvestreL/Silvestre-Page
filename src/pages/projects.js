@@ -12,7 +12,7 @@ const projects = [
     text: "Kanban Board",
   },
   {
-    href: "/projects/kanban",
+    href: "/projects/clinicamedica",
     imgSrc: "/images/clinicamedica.jpg",
     imgAlt: "Clinica Médica",
     text: "Clinica Médica",

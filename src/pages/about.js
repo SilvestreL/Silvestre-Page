@@ -43,7 +43,7 @@ const About = () => {
   return (
     <div className={styles.about}>
       <Container className={styles.container}>
-        <Row className="mb-5">
+        <Row className="mb-1">
           <Col>
             <h2 className={styles.few}>A Few Words About Me</h2>
             <h1 className={styles.title}>
@@ -53,20 +53,18 @@ const About = () => {
               tireless search for knowledge makes me a unique professional.
             </h1>
             <p className={styles.description}>
-              Over the last 3 years, I have been training in the areas of
-              project management and full stack development. In my free time, I
-              like photography and playing different sports. Additionally, I
-              have been actively involved in various personal projects to
-              sharpen my skills and stay updated with the latest trends in
-              technology. My dedication to continuous learning has earned me
-              several certifications, reflecting my commitment to professional
-              growth. Balancing my technical pursuits with personal interests
-              allows me to maintain a well-rounded and fulfilling lifestyle.
+              For the last 3 years, I have been working in the areas of project
+              management and full stack development. In my free time I like to
+              play different sports. Additionally, I have been involved in
+              several personal projects to improve my skills and stay up to date
+              with the latest trends in technology. My dedication to continuous
+              learning has earned me several certifications, reflecting my
+              commitment to professional growth.
             </p>
           </Col>
         </Row>
         <Container className="py-3">
-          <h1 className={`text-center mb-5 ${styles.few}`}>50 shades of</h1>
+          <h1 className={`text-center mb-4 ${styles.few}`}>50 shades of</h1>
           <Row>
             {cards.slice(0, 3).map((card, index) => (
               <Col xs={12} md={4} key={index} className="mb-4">
@@ -159,15 +157,16 @@ const About = () => {
                 <span>/</span>
                 <span>Python</span>
                 <span>/</span>
-                <span>ReactJS</span>
+                <span>React</span>
                 <span>/</span>
                 <span>NodeJS</span>
                 <span>/</span>
-                <span>Bootstrap</span>
+                <span> Bootstrap</span>
                 <span>/</span>
-                <span>NextJS</span>
+                <span> NextJS </span>
                 <span>/</span>
                 <span>Databases</span>
+                <span> oPEN ssl </span>
               </p>
             </Col>
           </Row>

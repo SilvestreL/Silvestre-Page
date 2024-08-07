@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevPage
 
-## Getting Started
+## Overview
+DevPage is a professional website project showcasing information about Lucas Silvestre, including his services, selected projects, and personal details. This project was developed to demonstrate skills in web development using modern technologies.
 
-First, run the development server:
+## Features
+- **Animated Welcome Screen:** A welcome screen that disappears after the animation completes.
+- **Smooth Page Transitions:** Animated page transitions using `Framer Motion`.
+- **Loading Skeletons:** Displays loading skeletons while data is being fetched.
+- **Scroll Opacity Effect:** The profile picture changes opacity as the page scrolls.
+- **Animated Services:** Services are listed with animations based on visibility in the viewport.
+- **Selected Projects:** Links to selected projects with hover animations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **React:** JavaScript library for building user interfaces.
+- **Next.js:** React framework for server-side rendering and static site generation.
+- **Bootstrap:** CSS framework for responsive design.
+- **React Bootstrap:** Integration of Bootstrap with React.
+- **React Loading Skeleton:** Library for displaying loading skeletons.
+- **Framer Motion:** Library for animations in React.
+- **React Intersection Observer:** Hook for detecting when a component is in the viewport.
+- **Custom Components:** `AnimatedCircle`, `ScrollToTopCircle`, and `WelcomeScreen`.
+- 
+## Project Structure
+```plaintext
+silvestre-dev-page/
+├── .next/
+├── node_modules/
+├── public/
+│   ├── icons/
+│   ├── images/
+│   ├── video/
+│   └── cv.pdf
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── pages/
+│   │   ├── api/
+│   │   ├── projects/
+│   │   │   ├── _app.js
+│   │   │   ├── about.js
+│   │   │   ├── contact.js
+│   │   │   ├── index.js
+│   │   │   └── projects.js
+│   ├── styles/
+├── .gitignore
+├── .gitattributes
+├── jsconfig.json
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+└── tailwind.config.js
+````
+## How to Run the Project
+To run the project locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/devpage.git
+    ```
+2. **Install the dependencies:**
+    ```sh
+    cd devpage
+    npm install
+    ```
+3. **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+4. **Open your browser and navigate to:**
+    ```
+    http://localhost:3000
+    ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contribution
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+For more information, contact:
+- **Email:** lucassilvestreadv@gmail.com    
+- **LinkedIn:** [linkedin.com/in/lucassilvestreee](https://www.linkedin.com/in/lucassilvestreee/)
