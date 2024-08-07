@@ -1,7 +1,7 @@
 // pages/clinicaMedica.js
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "../../styles/clinicaMedica.module.css";
+import styles from "../../styles/ClinicaMedica.module.css";
 
 const ClinicaMedica = () => {
   return (
